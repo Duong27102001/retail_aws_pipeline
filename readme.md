@@ -12,9 +12,8 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 - **⚙️ Hiệu suất vận hành** – Phát hiện các nút thắt trong chuỗi cung ứng để tối ưu hóa logistics và thời gian giao hàng.
 ---
 
-### 🏗️Data Pipeline Workflow
+## 🏗️Data Pipeline Workflow
 ![Alt text](data/image/pipeline.PNG)
-
 1. **Ingestion**: Raw data is downloaded from [Kaggle Dataset](https://www.kaggle.com/datasets/alinoranianesfahani/dataco-smart-supply-chain-for-big-data-analysis) and stored in **AWS S3**.
 2. **Processing (ETL)**:
    - PySpark processes the data, performs transformations, and loads it into **staging S3**.
