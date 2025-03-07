@@ -11,7 +11,7 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 - **🛒 Phân tích hành vi khách hàng và phương thức thanh toán** – Phân khúc khách hàng dựa trên thói quen mua sắm để cá nhân hóa chiến lược marketing.
 - **⚙️ Hiệu suất vận hành** – Phát hiện các nút thắt trong chuỗi cung ứng để tối ưu hóa logistics và thời gian giao hàng.
 
-## 🎯 Objectives
+## 🎯 Mục tiêu
 - **Centralized Data Warehouse**: Store structured data in **Amazon Redshift**.
 - **Efficient ETL Process**: Use **PySpark** and **Airflow** to process and load data.
 - **Scalable Storage**: Store raw & staging data in **AWS S3**.
@@ -21,10 +21,9 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 ---
 
 ## 🏗️ Architecture Diagram
-## Data Pipeline Diagram
 ![Alt text](data/image/pipeline.PNG)
 
-## 🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 | Tool/Service        | Purpose                                |
 |---------------------|----------------------------------------|
