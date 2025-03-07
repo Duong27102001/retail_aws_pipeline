@@ -32,7 +32,6 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 4. **Analysis**: Power BI connects to Redshift for interactive dashboards.
 5. **Automation**: Airflow schedules and monitors the pipeline.
 ### 🛠️ Tech Stack
-
 | Tool/Service        | Purpose                                |
 |---------------------|----------------------------------------|
 | **Amazon Redshift** | Data Warehouse                         |
