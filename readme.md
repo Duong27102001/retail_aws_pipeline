@@ -18,10 +18,10 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 - **Interactive Analytics**: Create business intelligence dashboards with **Power BI**.
 - **Containerized Deployment**: Use **Docker** for easy orchestration.
 
-### 🏗️ Architecture Diagram
+### 🏗️ 1. Architecture Diagram
 ![Alt text](data/image/pipeline.PNG)
 
-### 🔄 Data Pipeline Workflow
+### 🔄 2. Data Pipeline Workflow
 
 1. **Ingestion**: Raw data is downloaded from [Kaggle Dataset](https://www.kaggle.com/datasets/alinoranianesfahani/dataco-smart-supply-chain-for-big-data-analysis) and stored in **AWS S3**.
 2. **Processing (ETL)**:
@@ -29,7 +29,7 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 3. **Loading**: Transformed data is loaded into **Amazon Redshift**.
 4. **Analysis**: Power BI connects to Redshift for interactive dashboards.
 5. **Automation**: Airflow schedules and monitors the pipeline.
-### 🛠️ Tech Stack
+### 🛠️ 3. Tech Stack
 | Tool/Service        | Purpose                                |
 |---------------------|----------------------------------------|
 | **Amazon Redshift** | Data Warehouse                         |
