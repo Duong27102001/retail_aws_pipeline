@@ -33,7 +33,7 @@ Bộ dữ liệu "DataCo Smart Supply Chain for Big Data Analysis" được thu 
 ## Attributes
 
 | **Attribute**                     | **Description**                                                                 |
-|-----------------------------------|---------------------------------------------------------------------------------|
+|:----------------------------------:|:--------------------------------------------------------------------------------:|
 | **Type**                          | Type of transaction made.                                                       |
 | **Days for shipping (real)**      | Actual shipping days of the purchased product.                                  |
 | **Days for shipment (scheduled)** | Days of scheduled delivery of the purchased product.                            |
