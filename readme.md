@@ -10,7 +10,7 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 - **📦 Phân tích doanh thu bán hàng** – Phân tích cung cầu để tránh tình trạng thiếu hàng hoặc dư thừa hàng hóa.
 - **🛒 Phân tích hành vi khách hàng và phương thức thanh toán** – Phân khúc khách hàng dựa trên thói quen mua sắm để cá nhân hóa chiến lược marketing.
 - **⚙️ Hiệu suất vận hành** – Phát hiện các nút thắt trong chuỗi cung ứng để tối ưu hóa logistics và thời gian giao hàng.
-
+---
 ## 🎯 Mục tiêu
 - **Centralized Data Warehouse**: Store structured data in **Amazon Redshift**.
 - **Efficient ETL Process**: Use **PySpark** and **Airflow** to process and load data.
@@ -18,9 +18,7 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 - **Interactive Analytics**: Create business intelligence dashboards with **Power BI**.
 - **Containerized Deployment**: Use **Docker** for easy orchestration.
 
----
-
-## 🏗️ Architecture Diagram
+### 🏗️ Architecture Diagram
 ![Alt text](data/image/pipeline.PNG)
 
 ### 🔄 Data Pipeline Workflow
@@ -41,7 +39,6 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 | **Power BI**       | Business Intelligence & visualization  |
 | **Docker**         | Containerized deployment              |
 
----
 ---
 
 ## 📦 Setup & Deployment
