@@ -1,7 +1,4 @@
-<p align="center">
-  <h1>🚀 Retail AWS Data Warehouse Pipeline</h1>
-</p>
-
+<h1 align="center">🚀 Retail AWS Data Warehouse Pipeline 🚀</h1>
 ## 📌 Overview
 This project is a **scalable data warehouse pipeline** designed for a **retail supply chain dataset**. The architecture leverages **AWS services** and **modern data engineering tools** to process, store, and visualize data for business insights.
 
