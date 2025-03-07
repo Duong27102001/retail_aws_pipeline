@@ -6,9 +6,9 @@ Dự án này là một hệ thống **Data Warehouse có khả năng mở rộn
 
 Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** thông qua các phân tích chuyên sâu (*insight*), bao gồm:
 
-- **📊 Hiệu suất bán hàng** – Xác định sản phẩm bán chạy, xu hướng theo mùa và sự tăng trưởng doanh thu.
-- **📦 Tối ưu tồn kho** – Phân tích cung cầu để tránh tình trạng thiếu hàng hoặc dư thừa hàng hóa.
-- **🛒 Hành vi khách hàng** – Phân khúc khách hàng dựa trên thói quen mua sắm để cá nhân hóa chiến lược marketing.
+- **📊 Phân tích quá trình đặt hàng và giao hàng** – Phân tích thời gian giao hàng và phương thức vận chuyển để tối ưu hóa quy trình giao hàng và giảm thiểu các trường hợp giao hàng muộn.
+- **📦 Phân tích doanh thu bán hàng** – Phân tích cung cầu để tránh tình trạng thiếu hàng hoặc dư thừa hàng hóa.
+- **🛒 Phân tích hành vi khách hàng và phương thức thanh toán** – Phân khúc khách hàng dựa trên thói quen mua sắm để cá nhân hóa chiến lược marketing.
 - **⚙️ Hiệu suất vận hành** – Phát hiện các nút thắt trong chuỗi cung ứng để tối ưu hóa logistics và thời gian giao hàng.
 
 ## 🎯 Objectives
@@ -23,8 +23,6 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 ## 🏗️ Architecture Diagram
 ## Data Pipeline Diagram
 ![Alt text](data/image/pipeline.PNG)
-
-[Click here to view the diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&dark=auto#G1z
 
 ## 🛠️ Tech Stack
 
