@@ -12,7 +12,7 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 - **⚙️ Hiệu suất vận hành** – Phát hiện các nút thắt trong chuỗi cung ứng để tối ưu hóa logistics và thời gian giao hàng.
 ---
 
-## 🏗️Data Pipeline Workflow
+## 🏗️Kiến trúc hệ thống
 ![Alt text](data/image/pipeline.PNG)
 1. **Ingestion**: Raw data is downloaded from [Kaggle Dataset](https://www.kaggle.com/datasets/alinoranianesfahani/dataco-smart-supply-chain-for-big-data-analysis) and stored in **AWS S3**.
 2. **Processing (ETL)**:
@@ -23,17 +23,17 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 6. **Containerized Deployment**: Use **Docker** for easy orchestration.
 ---
 ## Thiết kế data warehouse
-### 1. Thông tin bộ dữ liệu
+### 1. Bài toán đặt ra
+
+### 2. Thông tin bộ dữ liệu
 Bộ dữ liệu "DataCo Smart Supply Chain for Big Data Analysis" được thu thập từ trang Kanggle. Bộ dữ liệu gồm có 3 file chính, đó là:
 1. DataCoSupplyChainDataset.csv: chứa các thông tin chi tiết về các đơn đặt hàng của khách hàng.
 2.  tokenized_access_logs.csv: chứa các thông tin liên quan đến sản phẩm
 3.  DescriptionDataCoSupplyChain.csv: chứa các mô tả về thông tin các thuộc tính trong bộ dữ liệu DataCoSupplyChainDataset.csv.
-   Dữ liệu cần được xử lý nằm trong file DataCoSupplyChainDataset.csv.
-
-## Attributes
+   Dữ liệu cần được xử lý nằm trong file DataCoSupplyChainDataset.csv. Bộ dữ liệu này có 53 thuộc tính, mô tả chi tiết các thuộc tính bên dưới:
 
 | **Attribute**                     | **Description**                                                                 |
-|:----------------------------------:|:--------------------------------------------------------------------------------:|
+|----------------------------------:|:--------------------------------------------------------------------------------|
 | **Type**                          | Type of transaction made.                                                       |
 | **Days for shipping (real)**      | Actual shipping days of the purchased product.                                  |
 | **Days for shipment (scheduled)** | Days of scheduled delivery of the purchased product.                            |
@@ -88,6 +88,9 @@ Bộ dữ liệu "DataCo Smart Supply Chain for Big Data Analysis" được thu 
 | **Product Status**                | Stock status of the product. **Values**: 1 (not available), 0 (available).       |
 | **Shipping Date**                 | Exact date and time of shipment.                                                |
 | **Shipping Mode**                 | Shipping modes presented: **Values**: Standard Class, First Class, Second Class, Same Day. |
+
+### 3. Thiết kế data warehouse
+Dựa trên bài toán đặt ra, cũng như là bộ dữ liệu thu thập được. Ta sẽ tiến hành thiết kế data warehouse theo dạng star schema thành các bảng sau:
 
 ## 📦 Setup & Deployment
 
