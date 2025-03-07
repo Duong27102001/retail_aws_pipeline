@@ -4,7 +4,6 @@
 
 Dự án này là một hệ thống **Data Warehouse có khả năng mở rộng**, được thiết kế để xử lý và phân tích dữ liệu chuỗi cung ứng bán lẻ. Hệ thống sử dụng các dịch vụ **AWS** và các công cụ **Data Engineering hiện đại** nhằm xây dựng một **hạ tầng dữ liệu mạnh mẽ**, hỗ trợ doanh nghiệp đưa ra quyết định dựa trên dữ liệu.
 
-## 🔍 Mục tiêu & Ứng dụng thực tế  
 Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** thông qua các phân tích chuyên sâu (*insight*), bao gồm:
 
 - **📊 Hiệu suất bán hàng** – Xác định sản phẩm bán chạy, xu hướng theo mùa và sự tăng trưởng doanh thu.
