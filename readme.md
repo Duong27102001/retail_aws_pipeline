@@ -14,6 +14,7 @@ This project is a **scalable data warehouse pipeline** designed for a **retail s
 
 ## 🏗️ Architecture Diagram
 ## Data Pipeline Diagram
+![Alt text](data/image/pipeline.PNG)
 
 [Click here to view the diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&dark=auto#G1z
 
