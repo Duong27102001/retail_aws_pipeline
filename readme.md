@@ -11,17 +11,9 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 - **🛒 Phân tích hành vi khách hàng và phương thức thanh toán** – Phân khúc khách hàng dựa trên thói quen mua sắm để cá nhân hóa chiến lược marketing.
 - **⚙️ Hiệu suất vận hành** – Phát hiện các nút thắt trong chuỗi cung ứng để tối ưu hóa logistics và thời gian giao hàng.
 ---
-## 🎯 Mục tiêu và công nghệ sử dụng
-- **Centralized Data Warehouse**: Store structured data in **Amazon Redshift**.
-- **Efficient ETL Process**: Use **PySpark** and **Airflow** to process and load data.
-- **Scalable Storage**: Store raw & staging data in **AWS S3**.
-- **Interactive Analytics**: Create business intelligence dashboards with **Power BI**.
-- **Containerized Deployment**: Use **Docker** for easy orchestration.
 
-### 🏗️ Architecture Diagram
+### 🏗️Data Pipeline Workflow
 ![Alt text](data/image/pipeline.PNG)
-
-### 🔄 Data Pipeline Workflow
 
 1. **Ingestion**: Raw data is downloaded from [Kaggle Dataset](https://www.kaggle.com/datasets/alinoranianesfahani/dataco-smart-supply-chain-for-big-data-analysis) and stored in **AWS S3**.
 2. **Processing (ETL)**:
@@ -29,6 +21,7 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 3. **Loading**: Transformed data is loaded into **Amazon Redshift**.
 4. **Analysis**: Power BI connects to Redshift for interactive dashboards.
 5. **Automation**: Airflow schedules and monitors the pipeline.
+- **Containerized Deployment**: Use **Docker** for easy orchestration.
 ---
 
 ## 📦 Setup & Deployment
