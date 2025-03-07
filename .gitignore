@@ -1,0 +1,8 @@
+env
+config/config.conf
+logs
+.idea
+__pycache__
+Dockerfile.spark
+test/
+spark_jars/
