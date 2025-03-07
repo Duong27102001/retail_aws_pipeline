@@ -1,7 +1,16 @@
 <h1 align="center">🚀 Retail AWS Data Warehouse Pipeline 🚀</h1>
 
-## 📌 Overview
-This project is a **scalable data warehouse pipeline** designed for a **retail supply chain dataset**. The architecture leverages **AWS services** and **modern data engineering tools** to process, store, and visualize data for business insights.
+## 📌 Tổng quan
+
+Dự án này là một hệ thống **Data Warehouse có khả năng mở rộng**, được thiết kế để xử lý và phân tích dữ liệu chuỗi cung ứng bán lẻ. Hệ thống sử dụng các dịch vụ **AWS** và các công cụ **Data Engineering hiện đại** nhằm xây dựng một **hạ tầng dữ liệu mạnh mẽ**, hỗ trợ doanh nghiệp đưa ra quyết định dựa trên dữ liệu.
+
+## 🔍 Mục tiêu & Ứng dụng thực tế  
+Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** thông qua các phân tích chuyên sâu (*insight*), bao gồm:
+
+- **📊 Hiệu suất bán hàng** – Xác định sản phẩm bán chạy, xu hướng theo mùa và sự tăng trưởng doanh thu.
+- **📦 Tối ưu tồn kho** – Phân tích cung cầu để tránh tình trạng thiếu hàng hoặc dư thừa hàng hóa.
+- **🛒 Hành vi khách hàng** – Phân khúc khách hàng dựa trên thói quen mua sắm để cá nhân hóa chiến lược marketing.
+- **⚙️ Hiệu suất vận hành** – Phát hiện các nút thắt trong chuỗi cung ứng để tối ưu hóa logistics và thời gian giao hàng.
 
 ## 🎯 Objectives
 - **Centralized Data Warehouse**: Store structured data in **Amazon Redshift**.
