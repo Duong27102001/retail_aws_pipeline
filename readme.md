@@ -4,12 +4,6 @@
 
 Dự án này là một hệ thống **Data Warehouse có khả năng mở rộng**, được thiết kế để xử lý và phân tích dữ liệu chuỗi cung ứng bán lẻ. Hệ thống sử dụng các dịch vụ **AWS** và các công cụ **Data Engineering hiện đại** nhằm xây dựng một **hạ tầng dữ liệu mạnh mẽ**, hỗ trợ doanh nghiệp đưa ra quyết định dựa trên dữ liệu.
 
-Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** thông qua các phân tích chuyên sâu (*insight*), bao gồm:
-
-- **📊 Phân tích quá trình đặt hàng và giao hàng** – Phân tích thời gian giao hàng và phương thức vận chuyển để tối ưu hóa quy trình giao hàng và giảm thiểu các trường hợp giao hàng muộn.
-- **📦 Phân tích doanh thu bán hàng** – Phân tích cung cầu để tránh tình trạng thiếu hàng hoặc dư thừa hàng hóa.
-- **🛒 Phân tích hành vi khách hàng và phương thức thanh toán** – Phân khúc khách hàng dựa trên thói quen mua sắm để cá nhân hóa chiến lược marketing.
-- **⚙️ Hiệu suất vận hành** – Phát hiện các nút thắt trong chuỗi cung ứng để tối ưu hóa logistics và thời gian giao hàng.
 ---
 
 ## 🏗️Kiến trúc hệ thống
@@ -24,12 +18,23 @@ Hệ thống này giúp doanh nghiệp **tối ưu hoạt động kinh doanh** t
 ---
 ## Thiết kế data warehouse
 ### 1. Bài toán đặt ra
-
+Cần thiết kế một hệ thống **tối ưu hoạt động kinh doanh** thông qua các phân tích chuyên sâu (*insight*), bao gồm:
+- Phân tích hiệu xuất bán hàng:
+  + Doanh thu theo thời gian: ngày, tuần, tháng, quý, năm.
+  + Hiệu suất bán hàng theo khu vực: phân tích doanh thu theo thành phố, quốc gia, thị trường.
+  + Đánh giá lợi nhuận: lợi nhuận ròng theo đơn hàng, sản phẩm, khách hàng.
+  + phân tích khách hàng tiềm năng: ai là khách hàng có doanh thu cao nhất, tuần suất cao nhất.
+  + Sản phẩm nào bán chạy nhất và sản phẩm nào ít được mua nhất.
+- Tối ưu hoá quy trình giao hàng:
+  + Tỷ lệ giao hàng trễ: bao nhiêu phần trăm đơn hàng bị giao trễ.
+  + So sánh thời gian giao hàng thực tế và dự kiến.
+  + Tác động của phương thức giao hàng: phương thức nào thường bị trễ nhất?
+---
 ### 2. Thông tin bộ dữ liệu
 Bộ dữ liệu "DataCo Smart Supply Chain for Big Data Analysis" được thu thập từ trang Kanggle. Bộ dữ liệu gồm có 3 file chính, đó là:
 1. DataCoSupplyChainDataset.csv: chứa các thông tin chi tiết về các đơn đặt hàng của khách hàng.
-2.  tokenized_access_logs.csv: chứa các thông tin liên quan đến sản phẩm
-3.  DescriptionDataCoSupplyChain.csv: chứa các mô tả về thông tin các thuộc tính trong bộ dữ liệu DataCoSupplyChainDataset.csv.
+2. tokenized_access_logs.csv: chứa các thông tin liên quan đến sản phẩm
+3. DescriptionDataCoSupplyChain.csv: chứa các mô tả về thông tin các thuộc tính trong bộ dữ liệu DataCoSupplyChainDataset.csv.
    Dữ liệu cần được xử lý nằm trong file DataCoSupplyChainDataset.csv. Bộ dữ liệu này có 53 thuộc tính, mô tả chi tiết các thuộc tính bên dưới:
 
 | **Attribute**                     | **Description**                                                                 |
@@ -91,6 +96,8 @@ Bộ dữ liệu "DataCo Smart Supply Chain for Big Data Analysis" được thu 
 
 ### 3. Thiết kế data warehouse
 Dựa trên bài toán đặt ra, cũng như là bộ dữ liệu thu thập được. Ta sẽ tiến hành thiết kế data warehouse theo dạng star schema thành các bảng sau:
+
+### 4. Trực hoá quá dữ liệu trên powerBI
 
 ## 📦 Setup & Deployment
 
